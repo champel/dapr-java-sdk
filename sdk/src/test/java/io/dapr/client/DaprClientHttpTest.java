@@ -422,7 +422,7 @@ public class DaprClientHttpTest {
         .setBody("request")
         .setHttpExtension(HttpExtension.POST);
     Mono<Void> result = daprClientHttp.invokeMethod(req, TypeRef.get(Void.class))
-        .contextWrite(context);
+        .subscriberContext(it -> it.putAll(context));
     result.block();
   }
 

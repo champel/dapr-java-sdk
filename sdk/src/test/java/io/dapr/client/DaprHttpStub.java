@@ -15,7 +15,6 @@ package io.dapr.client;
 
 import reactor.core.publisher.Mono;
 import reactor.util.context.Context;
-import reactor.util.context.ContextView;
 
 import java.util.List;
 import java.util.Map;
@@ -46,7 +45,7 @@ public class DaprHttpStub extends DaprHttp {
         String[] pathSegments,
         Map<String, List<String>> urlParameters,
         Map<String, String> headers,
-        ContextView context) {
+        Context context) {
         return Mono.empty();
     }
 
@@ -59,7 +58,7 @@ public class DaprHttpStub extends DaprHttp {
         Map<String, List<String>> urlParameters,
         String content,
         Map<String, String> headers,
-        ContextView context) {
+        Context context) {
         return Mono.empty();
     }
 
@@ -72,7 +71,7 @@ public class DaprHttpStub extends DaprHttp {
         Map<String, List<String>> urlParameters,
         byte[] content,
         Map<String, String> headers,
-        ContextView context) {
+        Context context) {
         return Mono.empty();
     }
 

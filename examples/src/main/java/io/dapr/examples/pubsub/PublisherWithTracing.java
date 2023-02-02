@@ -63,7 +63,7 @@ public class PublisherWithTracing {
           client.publishEvent(
               PUBSUB_NAME,
               TOPIC_NAME,
-              message).contextWrite(getReactorContext()).block();
+              message).subscriberContext(getReactorContext()).block();
           System.out.println("Published message: " + message);
 
           try {
