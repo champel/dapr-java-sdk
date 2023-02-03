@@ -18,7 +18,7 @@
 
   <properties>
     <maven.deploy.skip>false</maven.deploy.skip>
-    <springboot.version>2.3.5.RELEASE</springboot.version>
+    <springboot.version>2.7.8</springboot.version>
   </properties>
 
   <dependencyManagement>
